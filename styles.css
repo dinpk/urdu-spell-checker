@@ -1,0 +1,171 @@
+@font-face {font-family: 'naskhfont';font-style: normal;font-weight: 400;src: url(nafeesweb.ttf) format('truetype');}
+
+body {
+	font: 17px/2em 'naskhfont', "Times New Roman", Times, serif;
+	background-color:#CCC;
+	margin:0;
+	background: url(https://image.ibb.co/cQ5Dkd/silverpattern.jpg) #EEE;
+	padding-bottom:20px;
+}
+
+header {
+	box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
+
+#logo {
+	text-align:center;
+	background-color:#00A0BC;
+	line-height:100%;
+}
+
+main {
+	direction:rtl;
+	padding:20px 20px 50px 20px;
+	box-sizing:border-box;
+	max-width:1200px;
+	width:100%;
+	margin:0 auto;
+	background-color:#FFF;
+	box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+	word-spacing:4px;
+	border-bottom-right-radius:10px;
+	border-bottom-left-radius:10px;
+}
+
+h2 {
+	font-weight:normal;
+	color:teal;
+}
+
+p {
+	text-indent:30px;
+}
+
+a {
+	color:blue;
+	text-decoration:none;
+}
+
+b {
+	font-weight:normal;
+}
+
+footer {
+	text-align:center;
+	padding:20px;
+	font-family:Arial;
+	font-size:70%;
+	color:#555;
+	letter-spacing:2px;
+}
+
+form {
+	padding:0 30px 30px 30px;
+	box-sizing:border-box;
+	overflow:auto;
+}
+
+div {
+	box-sizing:border-box;
+}
+
+em {
+	font-style:normal;
+	color:red;
+}
+
+#setting-icons {
+	visibility:hidden;
+	text-align:center;
+}
+
+#content {
+	font: 17px/2em 'naskhfont', "Times New Roman", Times, serif;
+	direction:rtl;
+	width:100%;
+	min-height:200px;
+	max-height:400px;
+	overflow:auto;
+	padding:10px 15px 10px 15px;
+	box-sizing:border-box;
+	background-color:AliceBlue;
+	border:5px solid #CCC;
+	word-spacing:5px;
+}
+
+#user_word {
+	padding:5px;
+	width:300px;
+}
+
+
+#storage_icons {
+	display:flex;
+	justify-content:space-between;
+	padding:0 10px 0 10px;
+}
+
+#message {
+	color:green;
+	font-weight:bold;
+	direction:ltr;
+}
+
+fieldset {
+	border:2px solid #CCC;
+	background-color:#F2F2F2;
+	text-align:center;
+	margin-top:50px;
+}
+
+legend {
+	font: 22px/1.5em 'naskhfont', "Times New Roman", Times, serif;
+	color:navy;
+	padding:3px 10px 0 10px;
+	color:white;
+	background-color:#777;
+	border-radius:10px;
+	margin:0 auto;
+}
+
+.button {
+	font: 20px/2em 'naskhfont', "Times New Roman", Times, serif;
+	padding:3px 30px 0 30px;
+}
+
+.button-small {
+	font: 16px/1.5em 'naskhfont', "Times New Roman", Times, serif;
+}
+
+.center {
+	text-align:center;
+}
+
+.sim {
+	color:DodgerBlue;
+}
+
+.note {
+	padding:10px;
+	color:MEDIUMBLUE;
+	text-align:center;
+}
+
+.note-small {
+	font: 16px/2em 'naskhfont', "Times New Roman", Times, serif;
+	text-align:center;
+	color:#444;
+	word-spacing:2px;
+}
+
+@media print {
+	header, 
+	footer,
+	.button {
+		display:none;
+	}
+	
+	main {
+		box-shadow:none;
+	}
+}

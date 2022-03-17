@@ -1,0 +1,46 @@
+<!doctype html>
+<html>
+	<head>
+		<title>Urdu Spell Checker</title>
+		<meta name="viewport" content="width=device-width, initial-scale=1">
+		<meta charset="utf-8">
+		<link href="styles.css" type="text/css" rel="stylesheet" media="all">
+		<script src="script.js"></script>
+	</head>
+	<body onload="loadData();">
+		<header>
+			<div id="logo"><img src="images/logo.png"></div>
+		</header>
+		<main>
+			<section id="setting-icons">
+				<a href="#" onclick="showDefaultWords();return false;"><img src="images/color-icon-01.png" title="تمام الفاظ"></a> 
+				<a href="#" onclick="showOkWords();return false;"><img src="images/color-icon-02.png" title="درست الفاظ"></a> 
+				<a href="#" onclick="showNotOkWords();return false;"><img src="images/color-icon-03.png" title="غلط الفاظ"></a> 
+				<a href="#" onclick="toggleBoxes();return false;"><img src="images/color-icon-05.png" title="الفاظ ڈبوں میں"></a>
+				<a href="#" onclick="showDoubtfulWords();return false;"><img src="images/color-icon-04.png" title="متشابہ الفاظ"></a> &nbsp; &nbsp; 
+			</section>
+			<div id="content" contenteditable="true"></div>
+			<div id="storage_icons">
+				<div><a href="#" onclick="saveData();return false;" title="Save Content">✓</a></div>
+				<div id="message"><span style="color:maroon;">Loading saved data (if any)....</span></div>
+				<div><a href="#" onclick="deleteData();return false;" title="Delete Content">x</a></div>
+			</div>
+			<div class="note-small">
+				نوٹ:  عبارت بغیر فارمیٹنگ کے پیسٹ کرنے کے لیے Ctrl+Shift+V استعمال کریں۔
+			</div>
+			<p class="center">
+				<input type="button" value="چیک کریں" class="button" onclick="checkSpell();"><br>
+			</p>
+			<fieldset>
+				<legend> لــفــظ </legend>
+				<input type="text" id="user_word"><br>
+				<input type="button" value="شامل کریں" class="button-small" onclick="addword();"> &nbsp; 
+				<input type="button" value="خارج کریں" class="button-small" onclick="removeword();"> &nbsp; 
+			</fieldset>
+			<div class="note-small">
+				نوٹ: یہ تبدیلیاں صرف آپ کے اس سسٹم کے لیے کارآمد ہیں۔
+			</div>
+		</main>
+		<footer></footer>
+	</body>
+</html>
